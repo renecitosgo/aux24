@@ -1,0 +1,35 @@
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    height: 240px;
+    margin: 20px;
+    box-shadow: -4px 2px 40px 0px rgba(171,165,165,0.75);
+    padding: 15px 30px;
+    border-radius: 8px;
+
+    .logoAndButtons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+
+        .logoPrincipalAux24 {
+            width: 300px;
+            height: 200px;
+            border: solid 2px black;
+            border-radius: 5px;
+        }
+
+        .gradient-button {
+            background: linear-gradient(to top, rgb(58, 58, 58), rgb(118, 117, 117));
+        }
+
+        .button-text {
+            white-space: pre-line;
+        }
+
+        .btn {
+            height: 50%;
+        }
+    }
+}

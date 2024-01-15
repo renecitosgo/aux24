@@ -1,0 +1,19 @@
+.containerCart {
+    position: relative;
+
+    .cartIcon {
+        font-size: 45px;
+        color: rgb(67, 26, 128);
+        cursor: pointer;
+        align-self: flex-start;
+    }
+}
+
+.cartNumber {
+    position: absolute;
+    font-size: 25px;
+    font-weight: 500;
+    top: -12px;
+    right: -10px;
+    color: #797675;
+}
