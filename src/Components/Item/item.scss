@@ -1,0 +1,40 @@
+.CardItem {
+    margin: 10px;
+    .Header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ItemHeader {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    }
+
+    .ItemImg {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+        box-shadow: -4px 2px 40px 0px rgba(171,165,165,0.75);
+    }
+}
+.ItemFooter {
+    .Option {
+        background-color: #d1ea11;
+        color: rgb(126, 38, 38);
+        border: solid #aad21c 1px;
+        border-radius: 3px;
+        padding: 10px 20px; 
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px; 
+        margin: 4px 2px;
+        transition-duration: 0.4s;
+        cursor: pointer; 
+
+        &:hover {
+            background-color: #dcfc07e6; 
+            color: black; 
+        }
+    }
+}

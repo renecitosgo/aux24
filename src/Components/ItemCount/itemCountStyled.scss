@@ -1,0 +1,59 @@
+.ItemCount {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #413f3f;
+    border-radius: 10px;
+    width: 200px;
+    margin: auto;
+
+    .Controls {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .Number {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(39, 37, 37);
+        font-style: italic;
+    }
+
+    .Button {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: linear-gradient(to top, rgb(96, 96, 96), rgb(127, 126, 126));
+        color: white;
+
+        &:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+    }
+    .ButtonAgregar {
+        padding: 0 20px;
+        width: 100%;
+        height: 50px;
+        margin-top: 10px;
+        font-size: 15px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: linear-gradient(to top, rgb(96, 96, 96), rgb(127, 126, 126));
+        color: white;
+
+        &:hover {
+            color: rgb(210, 208, 208)
+        }
+
+    }
+}
