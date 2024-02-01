@@ -1,0 +1,39 @@
+.CardItemDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+    .HeaderDetail {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .ItemHeaderDetail {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
+    picture {
+        display: flex;
+        justify-content: center;
+
+        .ItemImgDetail {
+            width: 50%;
+            border-radius: 5px;
+            box-shadow: -4px 2px 40px 0px rgba(171,165,165,0.75);
+        }
+    }
+    section {
+        .InfoDetail {
+            font-weight: bold;
+        }
+    }
+
+    footer {
+        .ItemFooterDetail {
+            font-weight: bold;
+        }
+    }
+
