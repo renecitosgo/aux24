@@ -4,6 +4,7 @@ import React from 'react';
 
 
 const ItemDetail = ({id, name, img, price, stock}) => {
+    console.log('Props:', {id, name, img, price, stock})
 
     return (
         <article className="CardItemDetail">

@@ -14,7 +14,7 @@ function NavBar() {
                     <img src={"/Images/logos/logoPrincipalAux24Optimizada.jpg"} alt="Logo Principal" className="logoPrincipalAux24" />
 
                     <Button variant="secondary" className="gradient-button" >Baterías</Button>
-                    <Button variant="secondary" className="button-text gradient-button">Auxilios{"\n"} Inmediatos</Button>
+                    <Button variant="secondary" className="button-text gradient-button">Auxilios -{"\n"} Inmediatos</Button>
                     <Button variant="secondary" className="button-text gradient-button">Quiero{"\n"} Ser Socio</Button>
 
                 </div>
