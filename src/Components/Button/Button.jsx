@@ -1,10 +1,10 @@
 import "./button.scss"
 
-function Button (props){
-    console.log (props, "props")
+function Button (){
+    console.log ()
     return(
         <div className="btn">
-            {props.children}
+            {}
         </div>
     )
 }

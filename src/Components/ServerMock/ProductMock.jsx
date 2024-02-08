@@ -64,27 +64,27 @@ export const products = [
     {   id: 7,
         name: "Auxilios Inmediatos",
         stock: 1,
-        category: "AUXILIOS",
+        category: "emergencias&auxilios",
         price: 50000,
         marca: "AUX24",
-        description:"EN 50 MINUTOS ESTAMOS AHÍ",
+        description:"En menos de 50 minutos estamos a donde nos indiques",
         img:"http://localhost:3000/Images/fotosServicios/personaAlLadodeAutoQuedado.jpg"
 
     },
     {id: 8,
         name: "Auxilios Programados",
         stock: 4,
-        category: "AUXILIOS",
+        category: "emergencias&auxilios",
         price: 20000,
         marca: "TRIFASE",
-        description:"PROGRAMÁ TU AUXILIO",
+        description:"Programá tu auxilio con la fecha y hora que más te convenga",
         img:"http://localhost:3000/Images/fotosServicios/personalExaminandoCuestionesdeBateria.jpg"
 
     },
     {id: 9,
         name: "Membresía Gold",
         stock: 20,
-        category: "MEMBRESIA",
+        category: "quiero-ser-socio",
         price: 3000,
         marca: "AUX24",
         description:"PROGRAMÁ TU AUXILIO",
@@ -121,7 +121,7 @@ export const getProductById = (productId) => {
 export const getProductsByCategory = (category) => {
     return new Promise ((resolve, reject) =>{
         setTimeout(()=>{
-            const productsByCategory = products.filter(prod => prod.category === category)
+            const productsByCategory = products.filter(prod => prod.category.toLowerCase() === category.toLowerCase())
             if (productsByCategory.length > 0){
                 resolve(
                     productsByCategory

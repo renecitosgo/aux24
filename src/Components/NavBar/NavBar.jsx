@@ -1,26 +1,30 @@
 import "./navBarStyled.scss";
 import CartWidget from "../CartWidget/CartWidget";
-import Button from 'react-bootstrap/Button';
+import { Link, NavLink } from "react-router-dom";
 
+const categories = [
+  { path: "/category/baterias", text: "Baterías" },
+  { path: "/category/emergencias&auxilios", text: "Emergencias & Auxilios" },
+  { path: "/category/quiero-ser-socio", text: "Quiero Ser Socio" },
+];
 
 function NavBar() {
+  return (
+    <div className="navBar">
+      <div className="logoAndButtons">
+        <Link to="/"><img src={"/Images/logos/logoPrincipalAux24Optimizada.jpg"} alt="Logo Principal" className="logoPrincipalAux24" /></Link>
 
-    const haciendoClick = (event) =>{
-        console.log(event)
-    }
-
-    return  <div className="navBar">
-                <div className="logoAndButtons">
-                    <img src={"/Images/logos/logoPrincipalAux24Optimizada.jpg"} alt="Logo Principal" className="logoPrincipalAux24" />
-
-                    <Button variant="secondary" className="gradient-button" >Baterías</Button>
-                    <Button variant="secondary" className="button-text gradient-button">Auxilios -{"\n"} Inmediatos</Button>
-                    <Button variant="secondary" className="button-text gradient-button">Quiero{"\n"} Ser Socio</Button>
-
-                </div>
-                <CartWidget number ={7} haciendoClick ={haciendoClick} />
-            </div>;  
+        {categories.map((category) => (
+          <div className="misEstilosdeButtonNavLink" key={category.path}>
+            <NavLink to={category.path} className={(navData) => (navData.isActive ? "button-text ActiveOption" : "button-text")}>
+              {category.text}
+            </NavLink>
+          </div>
+        ))}
+      </div>  
+      <CartWidget/>
+    </div>
+  );  
 }
 
 export default NavBar;
-
