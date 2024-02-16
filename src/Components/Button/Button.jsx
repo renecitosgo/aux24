@@ -1,10 +1,9 @@
 import "./button.scss"
 
-function Button (){
-    console.log ()
+function Button ({children, handleClick, ...props}) {
     return(
-        <div className="btn">
-            {}
+        <div className="btn" onClick={handleClick} {...props} >
+            {children}
         </div>
     )
 }

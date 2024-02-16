@@ -1,13 +1,17 @@
 import "./itemDetailContainer.scss"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useContext } from "react"
 import { getProductById } from "../ServerMock/ProductMock"
 import ItemDetail from "../ItemDetail/ItemDetail"   
 import { useParams } from "react-router-dom"
+import CartContext from "../Context/CartContext"
+
 
 const ItemDetailContainer = ()=>{
+    const cartState = useContext(CartContext)
+    const { itemId } = useParams()    
     const [product, setProduct] = useState (null)
 
-    const { itemId } = useParams()
+    
 
     console.log('itemId:', itemId);
 
