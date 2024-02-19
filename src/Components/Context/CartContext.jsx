@@ -22,16 +22,21 @@ export const CartProvider = ({ children }) => {
         } else {
             setItemsCart([...itemsCart, { ...items, quantity: quantityToAdd }]);
         }
-    };
+    }
 
     const removeItem = (itemId) => {
         const newItemsCart = itemsCart.filter(item => item.id !== itemId);
         setItemsCart(newItemsCart);
+
+        const totalQuantity = newItemsCart.reduce((total, currentItem) => total + currentItem.quantity, 0);
+        setQuantity(totalQuantity)
     };
     
     const clearCart = () => {
-        setItemsCart([]);
-    };
+        if (itemsCart.length > 0)
+        setItemsCart([])
+        setQuantity(0)
+    }
 
     useEffect(() => {
         const totalQuantity = itemsCart.reduce((total, currentItem) => total + currentItem.quantity, 0);

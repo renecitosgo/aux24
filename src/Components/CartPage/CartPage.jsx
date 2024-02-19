@@ -4,11 +4,20 @@ import Button from "../Button/Button";
 import "./cartPage.scss"
 
 const CartPage = ()=>{
-    const { itemsCart, removeItem, clearCart } = useContext(CartContext)
+    const { itemsCart, quantity, removeItem, clearCart } = useContext(CartContext)
+
+    
 
     return (
         <div className="CartPage">
+            {quantity > 0 ? (
             <h2  className="h2NameCarrito">Tu Carrito de Compras</h2>
+            ) : ( 
+            <div className="emptyCartMessage" > 
+                <h4>Carrito Vacío 😎</h4>
+                <img src="./Images/fondos/carritoVacioMessage.jpg" alt="Imagen_que_indica_carrito_vacío" />
+            </div>
+            )}
             <div className="cartItemsContainer">
                 {itemsCart.map((item, index)=>{
                     return(
@@ -21,7 +30,7 @@ const CartPage = ()=>{
                 })
                 }
             </div>
-            <Button className="clearCartButton" onClick={clearCart}>Limpiar Carrito💔</Button>
+            {quantity >0 ? <Button className="clearCartButton" onClick={clearCart}>Limpiar Carrito💔</Button> : null}
         </div>
     )
 }

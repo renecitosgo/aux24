@@ -35,5 +35,5 @@ const ItemDetail = ({id, name, img, price, stock, description}) => {
         </article>
     );
 }
-
+        
 export default ItemDetail

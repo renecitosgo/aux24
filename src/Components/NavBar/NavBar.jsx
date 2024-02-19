@@ -1,6 +1,8 @@
 import "./navBarStyled.scss";
+import CartContext from "../Context/CartContext";
 import CartWidget from "../CartWidget/CartWidget";
 import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
 
 const categories = [
   { path: "/category/baterias", text: "Baterías" },
@@ -9,6 +11,9 @@ const categories = [
 ];
 
 function NavBar() {
+
+  const {itemsCart } = useContext(CartContext)
+
   return (
     <div className="navBar">
       <div className="logoAndButtons">
@@ -22,7 +27,7 @@ function NavBar() {
           </div>
         ))}
       </div>  
-      <CartWidget/>
+      {itemsCart.length >0 && <CartWidget/>}
     </div>
   );  
 }

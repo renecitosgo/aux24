@@ -8,6 +8,8 @@ function CartWidget () {
     const navigate = useNavigate();
     const { quantity } = useContext(CartContext);
 
+    console.log("Valor de quantity dentro de CartWidget:", quantity); 
+
     const handleClick = () => {
         navigate("/cart");
     };
@@ -15,7 +17,7 @@ function CartWidget () {
     return (
         <div className='containerCart' onClick={handleClick}>
             <ShoppingCartCheckoutIcon className="cartIcon" />
-            <span className="cartNumber">{quantity}</span>
+            <span className="cartNumber">{quantity}</span> 
         </div>
     );
 }

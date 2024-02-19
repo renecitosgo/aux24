@@ -7,7 +7,14 @@
     .h2NameCarrito {
         padding: 30px;
     }
+    .emptyCartMessage{
+        text-align: center;
+        h4{
+            padding: 20px;
+            
 
+        }
+    }
     .cartItemsContainer {
         display: flex;
         flex-wrap: wrap;

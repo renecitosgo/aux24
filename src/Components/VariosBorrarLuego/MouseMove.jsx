@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+/*import React, { useEffect, useState } from 'react';
 
 const MouseMove = () => {
 
@@ -34,4 +34,4 @@ const MouseMove = () => {
     );
 };
 
-export default MouseMove;
+export default MouseMove;*/

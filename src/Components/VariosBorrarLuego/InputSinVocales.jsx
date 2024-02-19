@@ -1,4 +1,4 @@
-import React from "react"
+/*import React from "react"
 
 const InputSinVocales = ()=>{
     const handleKeyDown = (event)=>{
@@ -13,3 +13,4 @@ const InputSinVocales = ()=>{
 }
 
 export default InputSinVocales
+*/

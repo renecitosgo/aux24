@@ -1,4 +1,4 @@
-import React from "react";
+/*import React from "react";
 
 function Formulario (){
     const handleSubmit = (event)=>{
@@ -20,4 +20,4 @@ function Formulario (){
     )
 }
 
-export default Formulario
+export default Formulario*/
