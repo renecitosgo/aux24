@@ -6,6 +6,23 @@ import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter } from 'react-router-dom';
 import { CartProvider } from './Components/Context/CartContext';
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC99NhBckgOh5d-ypf-SAVVEs6WP7U31ZY",
+  authDomain: "aux24-aa2eb.firebaseapp.com",
+  projectId: "aux24-aa2eb",
+  storageBucket: "aux24-aa2eb.appspot.com",
+  messagingSenderId: "273636511014",
+  appId: "1:273636511014:web:ab14fe9c164749384fc5e7"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
 
 
 

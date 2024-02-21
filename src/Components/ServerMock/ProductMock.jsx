@@ -5,7 +5,7 @@ export const products = [
         name: "BATERIA 12 V 75 A",
         stock: 20,
         category: "BATERIAS",
-        price: 86200,
+        price: 94900,
         marca: "TRIFASE",
         description: "BATERIA AUTO 12 X 75 A 500 CCA LIBRE GARANTIA 1 AÑO",
         img: "http://localhost:3000/Images/modelosdeBaterias/img12x75.jpeg"
@@ -16,7 +16,7 @@ export const products = [
         name: "BATERIA 12 V 85 A",
         stock: 50,
         category: "BATERIAS",
-        price: 94800,
+        price: 106000,
         marca: "TRIFASE",
         description:"BATERIA AUTO 12 X 85 A 550 CCA LIBRE GARANTIA 1 AÑO",
         img:"http://localhost:3000/Images/modelosdeBaterias/img12x85.jpeg"
@@ -26,7 +26,7 @@ export const products = [
         name: "BATERIA 12 V 90 A",
         stock: 5,
         category: "BATERIAS",
-        price: 135700,
+        price: 149000
         marca: "TRIFASE",
         description: "BATERIA CAMIONETA 12 X 90 A 750 CCA LIBRE GARANTIA 1 AÑO",
         img: "http://localhost:3000/Images/modelosdeBaterias/img12x90.jpeg"
@@ -36,7 +36,7 @@ export const products = [
         name: "BATERIA 12 V 110 A",
         stock: 20,
         category: "BATERIAS",
-        price: 131600,
+        price: 145000,
         marca: "TRIFASE",
         description:"BATERIA MAQUINARIA 12 X 110 A 800 CCA LIBRE GARANTIA 1 AÑO",
         img: "http://localhost:3000/Images/modelosdeBaterias/img12x110.jpeg"
@@ -46,7 +46,7 @@ export const products = [
         name: "BATERIA 12 V 120 A",
         stock: 5,
         category: "BATERIAS",
-        price: 151000,
+        price: 150000,
         marca: "TRIFASE",
         description:"BATERIA TRACTOR 12 X 120 A 850 CCA LIBRE GARANTIA 1 AÑO",
         img:"http://localhost:3000/Images/modelosdeBaterias/img12x120.jpeg"
@@ -56,7 +56,7 @@ export const products = [
         name: "BATERIA 12 V 180 A",
         stock: 20,
         category: "BATERIAS",
-        price: 213500,
+        price: 245000,
         marca: "AUX24",
         description:"BATERIA CAMION 12 X 180 A 1000 CCA LIBRE GARANTIA 1 AÑO",
         img:"http://localhost:3000/Images/modelosdeBaterias/img12x180.jpeg"

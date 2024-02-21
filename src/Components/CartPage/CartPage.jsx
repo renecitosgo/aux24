@@ -2,6 +2,8 @@ import { useContext } from "react";
 import CartContext from "../Context/CartContext";
 import Button from "../Button/Button";
 import "./cartPage.scss"
+import EmojiEmotionsSharpIcon from '@mui/icons-material/EmojiEmotionsSharp'
+
 
 const CartPage = ()=>{
     const { itemsCart, quantity, removeItem, clearCart } = useContext(CartContext)
@@ -14,7 +16,7 @@ const CartPage = ()=>{
             <h2  className="h2NameCarrito">Tu Carrito de Compras</h2>
             ) : ( 
             <div className="emptyCartMessage" > 
-                <h4>Carrito Vacío 😎</h4>
+                <h4>Carrito Vacío <EmojiEmotionsSharpIcon /></h4>
                 <img src="./Images/fondos/carritoVacioMessage.jpg" alt="Imagen_que_indica_carrito_vacío" />
             </div>
             )}
