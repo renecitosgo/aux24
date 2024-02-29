@@ -26,7 +26,7 @@ export const products = [
         name: "BATERIA 12 V 90 A",
         stock: 5,
         category: "BATERIAS",
-        price: 149000
+        price: 149000,
         marca: "TRIFASE",
         description: "BATERIA CAMIONETA 12 X 90 A 750 CCA LIBRE GARANTIA 1 AÑO",
         img: "http://localhost:3000/Images/modelosdeBaterias/img12x90.jpeg"
