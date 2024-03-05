@@ -10,7 +10,7 @@ const ItemDetail = ({id, name, img, price, stock, description}) => {
     const quantity = cartContext.quantity
 
     const addToCart = (quantityToAdd) => {
-        addItems({id, name}, quantityToAdd)
+        addItems({id, name, price}, quantityToAdd)
     }
 
     return (

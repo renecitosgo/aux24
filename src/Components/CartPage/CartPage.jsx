@@ -1,14 +1,16 @@
-import { useContext } from "react";
-import CartContext from "../Context/CartContext";
+import "./cartPage.scss"    
+import { useContext } from 'react';
+import CartContext from '../Context/CartContext';
+import { useEffect, useState } from 'react';
 import Button from "../Button/Button";
-import "./cartPage.scss"
+import { Link } from 'react-router-dom';
 import EmojiEmotionsSharpIcon from '@mui/icons-material/EmojiEmotionsSharp'
+import Checkout from "../Checkout/Checkout"
 
 
 const CartPage = ()=>{
-    const { itemsCart, quantity, removeItem, clearCart } = useContext(CartContext)
-
     
+    const {itemsCart, quantity, total, removeItem, clearCart } = useContext(CartContext)
 
     return (
         <div className="CartPage">
@@ -25,13 +27,20 @@ const CartPage = ()=>{
                     return(
                     <div className="cartItem" key={item.id}>
                         <h3>{item.name}</h3>
-                        <p>Cantidad: {item.quantity}</p>
+                        <p>Categoría: {item.category}</p>
+                        <p>Precio: ${item.price}</p>
                         <Button className="clear1ItemButton" onClick={()=> removeItem(item.id)} >Eliminar🙂</Button>
                     </div>
                     )
                 })
                 }
+            <p className="total">Total: ${total}</p>
+
+            <Link to="/Checkout" className="option" >Checkout</Link>
+            
             </div>
+            
+
             {quantity >0 ? <Button className="clearCartButton" onClick={clearCart}>Limpiar Carrito💔</Button> : null}
         </div>
     )

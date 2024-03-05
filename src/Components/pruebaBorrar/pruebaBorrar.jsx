@@ -1,4 +1,4 @@
-import db from '../Services/Firebase/Firebase';
+/*import db from '../Services/Firebase/Firebase';
 import { collection, getDocs } from "firebase/firestore";
 
 const mostrarDatosConsola = async () => {
@@ -12,4 +12,4 @@ const mostrarDatosConsola = async () => {
     }
 };
 
-mostrarDatosConsola();
+mostrarDatosConsola();*/

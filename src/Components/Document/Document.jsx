@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+/*import { useEffect, useState } from 'react'
 import { doc, getDoc, getFirestore } from 'firebase/firestore'
 
 const Document = () => {
@@ -32,3 +32,4 @@ const Document = () => {
 }
 
 export default Document
+*/

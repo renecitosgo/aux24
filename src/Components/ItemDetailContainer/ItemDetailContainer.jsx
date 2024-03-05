@@ -1,32 +1,34 @@
 import "./itemDetailContainer.scss"
 import { useEffect, useState, useContext } from "react"
-import { getProductById } from "../ServerMock/ProductMock"
 import ItemDetail from "../ItemDetail/ItemDetail"   
 import { useParams } from "react-router-dom"
-import CartContext from "../Context/CartContext"
+import { getDoc, doc } from 'firebase/firestore'
+import db from '../Services/Firebase/Firebase';
 
 
 const ItemDetailContainer = ()=>{
-    const cartState = useContext(CartContext)
-    const { itemId } = useParams()    
     const [product, setProduct] = useState (null)
+    const [loading, setLoading ] = useState (true)
 
-    
-
-    console.log('itemId:', itemId);
+    const { itemId } = useParams()
 
     useEffect(()=>{
-        getProductById(Number(itemId))
-            .then(response =>{
-                setProduct(response)
-                console.log('Product:', response)
-            })
-            .catch(error => {
-                console.error(error)
-            })
-    }, [itemId])
+        setLoading(true)
 
-    console.log('Product state:', product) 
+        const docRef = doc(db, "baterias", itemId)
+
+        getDoc(docRef)
+            .then(response =>{
+                const data = response.data()
+                const productAdapted = { id: response.id, ...data }
+                setProduct(productAdapted)
+            })
+            .catch(error =>{
+                console.log(error)
+            })
+        }, [itemId])
+
+
 
     return (
         <div className="ItemDetailContainer">

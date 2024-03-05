@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+/*import { useEffect, useState } from 'react';
 import { collection, getDocs, getFirestore } from 'firebase/firestore';
 
 const Collection = () => {
@@ -8,7 +8,7 @@ const Collection = () => {
     useEffect(() => {
         const db = getFirestore();
 
-        const itemsCollection = collection(db, "cafe");
+        const itemsCollection = collection(db, "baterias");
         getDocs(itemsCollection).then((snapshot) => {
             const docs = snapshot.docs.map((doc) => doc.data());
             setProducts(docs);
@@ -21,9 +21,9 @@ const Collection = () => {
             {
                 products.map((p) => (
                     <div>
-                        <h4>{p.nombre}</h4>
-                        <p>{p.categoria}</p>
-                        <p>${p.precio}</p>
+                        <h4>{p.name}</h4>
+                        <p>{p.category}</p>
+                        <p>${p.price}</p>
                     </div>
                 ))
             }
@@ -32,3 +32,4 @@ const Collection = () => {
 }
 
 export default Collection
+*/

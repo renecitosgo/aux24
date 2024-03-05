@@ -11,8 +11,6 @@
         text-align: center;
         h4{
             padding: 20px;
-            
-
         }
     }
     .cartItemsContainer {
@@ -39,6 +37,9 @@
         p {
             padding: 20px;
             margin-bottom: 10px;
+            .total{
+                font-size: 30px;
+            }
         }
 
         .clear1ItemButton {
