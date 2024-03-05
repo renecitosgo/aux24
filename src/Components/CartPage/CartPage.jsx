@@ -1,9 +1,9 @@
 import "./cartPage.scss"    
-import { useContext } from 'react';
-import CartContext from '../Context/CartContext';
-import { useEffect, useState } from 'react';
-import Button from "../Button/Button";
-import { Link } from 'react-router-dom';
+import { useContext } from 'react'
+import CartContext from '../Context/CartContext'
+import { useEffect, useState } from 'react'
+import Button from "../Button/Button"
+import { Link } from 'react-router-dom'
 import EmojiEmotionsSharpIcon from '@mui/icons-material/EmojiEmotionsSharp'
 import Checkout from "../Checkout/Checkout"
 
@@ -33,11 +33,12 @@ const CartPage = ()=>{
                     </div>
                     )
                 })
-                }
-            <p className="total">Total: ${total}</p>
+                }            
+            </div>
+            <div  className="containerTotalyCheckout">
+                <p className="total">Total: ${total}</p>
 
-            <Link to="/Checkout" className="option" >Checkout</Link>
-            
+                <Link to="/Checkout" className="option" >Comprar</Link>
             </div>
             
 

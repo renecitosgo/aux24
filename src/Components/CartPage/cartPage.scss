@@ -16,16 +16,47 @@
     .cartItemsContainer {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between; 
+        justify-content: center; 
+        align-items: center;
+    }
+    .containerTotalyCheckout{
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        flex-direction: column; 
+
+        .total{
+            
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 2px;
+            margin-top: 10%;
+        }
+        .option{
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(3, 128, 64);
+            font-size: 20px;
+            border: solid 1px green;
+            border-radius: 10px;
+
+            &:hover{
+                background-color: rgb(6, 72, 6);
+                color: azure;
+            }
+        }
+
+        
     }
     
     .cartItem {
+        
         border: solid 1px black;
         border-radius: 5px;
         width: calc((100% / 3) - 20px); 
         min-width: 150px;
         min-height: 200px;
-        margin-bottom: 20px;
+    
     
 
         h3 {

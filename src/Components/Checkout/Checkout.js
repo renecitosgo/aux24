@@ -1,9 +1,10 @@
 
-import db from "../Services/Firebase/Firebase";
+import db from "../Services/Firebase/Firebase"
 import CheckoutForm from "../CheckoutForm/CheckoutForm"
-import CartContext from "../Context/CartContext";
-import { useContext, useState } from "react";
-import { Timestamp, collection, getDocs, query, where, documentId, addDoc, writeBatch } from "firebase/firestore";
+import CartContext from "../Context/CartContext"
+import { useContext, useState } from "react"
+import { Timestamp, collection, getDocs, query, where, documentId, addDoc, writeBatch } from "firebase/firestore"
+import "./checkout.scss"
 
 const Checkout = ()=>{
     const [ loading, setLoading ] = useState(false)
@@ -77,7 +78,7 @@ const Checkout = ()=>{
     }
     return (
         <div>
-            <h1>Checkout</h1>
+            <h1 className="h1Checkout">Checkout</h1>
             <CheckoutForm onConfirm={createOrder}/>
         </div>
     )

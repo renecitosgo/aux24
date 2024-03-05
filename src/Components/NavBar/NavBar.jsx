@@ -1,8 +1,8 @@
-import "./navBarStyled.scss";
-import CartContext from "../Context/CartContext";
-import CartWidget from "../CartWidget/CartWidget";
-import { Link, NavLink } from "react-router-dom";
-import { useContext } from "react";
+import "./navBarStyled.scss"
+import CartContext from "../Context/CartContext"
+import CartWidget from "../CartWidget/CartWidget"
+import { Link, NavLink } from "react-router-dom"
+import { useContext } from "react"
 
 const categories = [
   { path: "/category/baterias", text: "Baterías" },
@@ -32,4 +32,4 @@ function NavBar() {
   );  
 }
 
-export default NavBar;
+export default NavBar

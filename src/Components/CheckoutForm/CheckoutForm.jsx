@@ -1,5 +1,8 @@
 import "./CheckoutForm.scss"
 import { useState } from "react"
+import EmailIcon from '@mui/icons-material/Email'
+import MobileScreenShareIcon from '@mui/icons-material/MobileScreenShare'
+import BadgeIcon from '@mui/icons-material/Badge'
 
 const CheckoutForm = ({onConfirm})=>{
     const [ name, setName ] = useState("")
@@ -15,39 +18,44 @@ const CheckoutForm = ({onConfirm})=>{
 
         onConfirm(userData)
     }
-
     return(
         <div className="Container" >
             <form onSubmit={handleConfirm} className="Form" >
-                <label className="Label">
-                    Nombre
+                <div className="InputContainer">
+                    <label className="Label">
+                        Nombre <BadgeIcon/>
+                    </label>
                     <input
                     className="Input"
                     type="text" 
                     value= {name}
                     onChange={({ target }) => setName(target.value)}
                     />
-                </label>
-                <label className="Label">
-                    Teléfono
+                </div>
+                <div className="InputContainer">
+                    <label className="Label">
+                        Teléfono <MobileScreenShareIcon/>
+                    </label>
                     <input
                     className="Input"
                     type="text" 
                     value= {phone}
                     onChange={({ target }) => setPhone(target.value)}
                     />
-                </label>
-                <label className="Label">
-                    Email
+                </div>
+                <div className="InputContainer">
+                    <label className="Label">
+                        Email <EmailIcon/>
+                    </label>
                     <input
                     className="Input"
                     type="email" 
                     value= {email}
                     onChange={({ target }) => setEmail(target.value)}
                     />
-                </label>
-                <div className="Label" >
-                    <button type="submit" className="Button">Crear Orden</button>
+                </div>
+                <div className="divToOrderButton" >
+                    <button type="submit" className="OrderButton">Crear Orden</button>
                 </div>
             </form>
         </div>

@@ -1,5 +1,5 @@
-import "./itemCountStyled.scss";
-import { useState } from "react";
+import "./itemCountStyled.scss"
+import { useState } from "react"
 
 
 const ItemCount = ({stock, initial, onAdd}) => {

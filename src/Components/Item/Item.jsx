@@ -1,5 +1,5 @@
 import "../Item/item.scss"
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 
 const Item = ({id, name, img, price, stock}) => {
 
@@ -24,7 +24,7 @@ const Item = ({id, name, img, price, stock}) => {
             <Link to={`/item/${id}`} className='Option'>Ver detalle</Link>
         </footer>
         
-        </article>);
+        </article>)
     }
     
     export default Item

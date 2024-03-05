@@ -1,8 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import "./itemListContainer.scss";
-import { getProducts, products, getProductsByCategory } from '../ServerMock/ProductMock';
-import ItemList from "../ItemList/ItemList";
-import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'
+import "./itemListContainer.scss"
+import ItemList from "../ItemList/ItemList"
+import { useParams } from 'react-router-dom'
 import { getDocs, collection, query, where } from 'firebase/firestore'
 import db from '../Services/Firebase/Firebase';
 

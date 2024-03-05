@@ -1,18 +1,18 @@
-import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout';
-import "./cartWidgetStyled.scss";
-import { useNavigate } from "react-router-dom";
-import { useContext } from "react";
-import CartContext from "../Context/CartContext";
+import ShoppingCartCheckoutIcon from '@mui/icons-material/ShoppingCartCheckout'
+import "./cartWidgetStyled.scss"
+import { useNavigate } from "react-router-dom"
+import { useContext } from "react"
+import CartContext from "../Context/CartContext"
 
 function CartWidget () {
-    const navigate = useNavigate();
-    const { quantity } = useContext(CartContext);
+    const navigate = useNavigate()
+    const { quantity } = useContext(CartContext)
 
-    console.log("Valor de quantity dentro de CartWidget:", quantity); 
+    console.log("Valor de quantity dentro de CartWidget:", quantity)
 
     const handleClick = () => {
-        navigate("/cart");
-    };
+        navigate("/cart")
+    }
 
     return (
         <div className='containerCart' onClick={handleClick}>
@@ -22,4 +22,4 @@ function CartWidget () {
     );
 }
 
-export default CartWidget;
+export default CartWidget

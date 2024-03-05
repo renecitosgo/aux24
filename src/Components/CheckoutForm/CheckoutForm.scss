@@ -1,0 +1,57 @@
+.Container {
+    display: flex;
+    flex-direction: column;
+
+    .Form {
+        display: flex;
+        flex-direction: column;
+        
+        .InputContainer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+
+            .Label {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10px; 
+                padding: 20px;
+                
+            }
+    
+            .Input {
+                border: none;
+                border-bottom: solid 1px blue;
+                width: 20%;
+                box-sizing: border-box;
+                padding: 10px;
+    
+                &:focus {
+                    outline: none;
+                }
+            }
+        }
+    }
+
+    .divToOrderButton {
+        display: flex;
+        justify-content: center;
+
+        .OrderButton {
+            padding: 2%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: rgb(241, 231, 27);
+            color: black;
+            border: solid 1px black;
+            border-radius: 5px;
+            &:hover{
+                background-color: black;
+                color: white;
+                border: solid 1px white;
+                border-radius: 5px;
+            }
+        }
+    }
+    }

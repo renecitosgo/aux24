@@ -1,11 +1,10 @@
-import React from "react";
-import "./Styles/App.scss";
-import NavBar from "./Components/NavBar/NavBar";
-import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
-import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer"; 
+import React from "react"
+import NavBar from "./Components/NavBar/NavBar"
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer"
+import ItemDetailContainer from "./Components/ItemDetailContainer/ItemDetailContainer"
 import CartPage from "./Components/CartPage/CartPage"
-import { Routes, Route } from "react-router-dom";
-import Checkout from "./Components/Checkout/Checkout";
+import { Routes, Route } from "react-router-dom"
+import Checkout from "./Components/Checkout/Checkout"
 
 
 
@@ -27,4 +26,4 @@ function App(){
 
 
 
-export default App;
+export default App
