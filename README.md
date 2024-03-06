@@ -19,7 +19,7 @@ La renderización del carrito de compras está condicionada a si este tiene o no
 
 Estructura del Código
 
- 
+ ![arlbolDeApp](https://github.com/renecitosgo/aux24/blob/main/public/Images/imagenesParaReadme/arboldeApp.jpg)
 
 
 
@@ -28,7 +28,7 @@ El código se organiza en varios componentes de React:
 •	El index.js es responsable de inicializar y renderizar el componente principal de la aplicación React en el DOM del navegador, configurando el enrutamiento y el contexto del carrito, y realizando algunas configuraciones adicionales para el desarrollo y la medición del rendimiento.
 
 
-
+![vistadeFirebase](https://github.com/renecitosgo/aux24/blob/main/public/Images/imagenesParaReadme/firebase.jpg)
 
 
 
@@ -51,7 +51,7 @@ Tenemos también el hook useEffect para realizar la lógica de obtención de dat
 
 
 
-
+![carritodeCompras](https://github.com/renecitosgo/aux24/blob/main/public/Images/imagenesParaReadme/carrito.jpg)
 
 
 
@@ -60,7 +60,8 @@ Tenemos también el hook useEffect para realizar la lógica de obtención de dat
 •	CartPage: Este componente muestra el carrito de compras del usuario.
  Si el carrito está vacío, se muestra un mensaje indicando que el carrito está vacío junto con un icono de emoji que sugiere que realices un pedido. Si hay elementos en el carrito, se muestra una lista de los elementos del carrito. Cada elemento del carrito muestra el nombre, la categoría y el precio del producto, y un botón para eliminar ese elemento del carrito. También se muestra el total del carrito. Hay un botón para ir a la página de pago (Checkout) y un botón para limpiar todo el carrito.
 •	Checkout: Este componente muestra un formulario de que recolecta información de usuario y la envía a nuestra base de datos en Firebase cuando el usuario decide realizar una compra. Una vez realizada esta operación, se genera una colección nueva con el pedido del cliente y a este, le devuelve en pantalla el ID identificatorio de su pedido.
- 
+
+ ![ordendeFirebase](https://github.com/renecitosgo/aux24/blob/main/public/Images/imagenesParaReadme/orderFirebase.jpg)
 	
 DATOS: 
 
