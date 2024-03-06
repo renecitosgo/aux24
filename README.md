@@ -5,6 +5,9 @@ Este proyecto es una “Aplicación de Comercio Electrónico” de baterías y s
 Esta aplicación permite a los usuarios navegar por una lista de productos obtenidos de la base de datos de Firebase/Firestore que se puede filtrar por categoría en cada botón de la barra de navegación, ver sus detalles y modificar la cantidad que se quiere, a su vez, se los puede agregar a un carrito de compras. 
 La renderización del carrito de compras está condicionada a si este tiene o no artículos agregados. Una vez que accedemos a Él, ingresamos a nuestra CartPage. En ella, nuestros artículos se muestran en tarjetas. Los botones para eliminar cada artículo como para limpiar el carrito son visibles sin existe un producto, sino una imagen sugiere que realicemos un pedido. La suma del total de los precios de los artículos como de sus cantidades también es calculada. Para terminar la compra, un botón con la leyenda “Comprar” nos redirecciona a nuestra ruta de Checkout en donde el cliente deberá completar 3 campos y “Ordenar”. Esta orden queda registrada en Firebase con el nombre de colección: “order” y el Id único, que es devuelto a la página en donde el usuario está terminando la compra y se hace visible como dato de confirmación.
 
+![vistaPrincipalAux24](https://github.com/renecitosgo/aux24/blob/main/public/Images/imagenesParaReadme/vistaPrincipalAux24.jpg)
+
+
  
 
 
